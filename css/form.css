@@ -1,0 +1,68 @@
+
+.formContainer{
+	padding: .5em;
+}
+
+#multimedia article{
+	margin-top: 0;
+}
+
+#saveButton{
+	background:#6abb37;
+	color:#FFF !important;
+}
+#saveButton:hover{
+	background-color:#4a9b17 !important;
+}
+
+.formContent{
+	background: #fafdff;
+	padding: 0em;
+	-webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+            box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.titleContainer{
+	padding: .5em .5em .5em 1em;
+	border-bottom: 1px #CCC solid;
+	background: #2b85de;
+	color: #FFF;
+}
+
+.form{
+	padding: .5em 1em 0 1em;
+}
+
+fieldset{
+	margin-bottom: 0 !important;
+}
+
+textarea{
+	min-height: 3.6em !important;
+}
+
+.control-group{
+	margin-bottom: 1em !important;
+}
+
+#imageForm{
+	margin-top:.25em;
+	margin-bottom: 0em !important;	
+}
+
+.mapForm{
+	padding: .5em;
+}
+
+.mapContainer{
+	height: auto;
+}
+
+#map{
+	height: 208px;
+}
+
+#socialMediaContainer{
+	margin-top: 1em;
+}

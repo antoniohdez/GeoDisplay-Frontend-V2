@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+	background: #EEE;
+	height: 100%;
+	position: relative;
+}
+
+.container{
+	margin-top: 1em;
+}
+
+footer{
+	background: #EEE;
+	border-top: 0;
+	bottom:0;
+	color: #000;
+	margin-top:0 !important;
+	/*position:absolute;*/
+	width:100%;
+}
+footer a {
+    color: #000;
+}
+footer a:hover{
+    color: #000;
+}
+footer p{
+	margin:0; padding: 0.5em 1em 0.5em 0;
+}
+.clickable{
+	cursor: pointer;
+}

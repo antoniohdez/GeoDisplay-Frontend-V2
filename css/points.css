@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.pointsContainer{
+	margin-top: 1em;
+	/*border-radius: 5px;
+	padding: 0em;*/
+}
+
+.pointContainer{
+	padding: .5em;
+}
+
+.pointContent{
+	background: #fafdff;
+	padding: 0em;
+	/*transition: all .1s linear;*/
+	-webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.titleContainer{
+	padding: .5em;
+}
+
+#actionButtons i{
+	cursor: pointer;
+}
+
+#addButton{
+	background:#6abb37;
+	color:#FFF !important;
+}
+#addButton:hover{
+	background-color:#4a9b17 !important;
+}
+
+.pointContent .mapContainer{
+	/**/
+}
+
+.pointContent .mapContainer img{
+	background: #DDD;
+	height: 150px;
+	width: 100%;
+}
+
+.pointContent .infoContainer{
+	padding: .5em;
+}
+
+.infoContainer a{
+	color: #555;
+}
+
+.infoContainer .twitter-logo{
+	color: #00aced;
+}
+
+.infoContainer .facebook-logo{
+	color: #3B5998;
+}
