@@ -27,9 +27,6 @@ html, body{
 .loginForm{
 	background: #FFF;
 	padding: 1em 1em 0 1em;
-	-webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
 }
 
 input{

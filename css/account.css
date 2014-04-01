@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.pointsContainer{
+	margin-top: 1em;
+	/*border-radius: 5px;
+	padding: 0em;*/
+}
+
+.pointContainer{
+	padding: .5em;
+}
+
+.sectionContent{
+	background: #fafdff;
+	padding: 0em;
+	/*transition: all .1s linear;*/
+}
+
+.titleContainer{
+	padding: .5em .5em .5em 1em;
+	border-bottom: 1px #CCC solid;
+	background: #2b85de;
+	color: #FFF;
+}

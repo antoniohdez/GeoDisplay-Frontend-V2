@@ -14,9 +14,6 @@
 	background: #fafdff;
 	padding: 0em;
 	/*transition: all .1s linear;*/
-	-webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:	2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
 }
 
 .titleContainer{
@@ -51,6 +48,11 @@
 
 .infoContainer a{
 	color: #555;
+	line-height: .5em;
+}
+
+.linkContainer{
+	padding: .1em;
 }
 
 .infoContainer .twitter-logo{

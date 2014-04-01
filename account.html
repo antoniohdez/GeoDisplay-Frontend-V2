@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            Home - GeoDisplay
+        </title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="img/geodisplay-favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/ink-min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/account.css">
+        
+        <!--[if IE 7 ]>
+            <link rel="stylesheet" href="../css/ink-ie7.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        
+        <script type="text/javascript" src="js/ink.min.js"></script>
+        <script type="text/javascript" src="js/ink-ui.min.js"></script>
+        <script type="text/javascript" src="js/autoload.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script type="text/javascript" src="js/holder.js"></script>
+
+    </head>
+    
+    <body>
+        <header>
+            <nav class="ink-navigation">
+                <ul class="menu horizontal shadowed blue">
+                    <li>
+                        <a href="index.html">
+                            <img src="img/geoDisplayLogo-124x124.png" height="27" width="27">
+                            GeoDIsplay
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="index.html">
+                            <i class="icon-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    -->
+                    <li class="active">
+                        <a href="#">
+                            <i class="icon-location-arrow"></i>
+                            Points
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-folder-close"></i>
+                            Multimedia
+                            <i class="icon-caret-down"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-picture"></i>
+                                    Image
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-film"></i>
+                                    Video
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-music"></i>
+                                    Audio
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="push-right">
+                        <a href="login.html">
+                            <i class="icon-signout"></i>
+                            Log out
+                        </a>
+                    </li>
+                    <li class="push-right">
+                        <a href="account.html">
+                            <i class="icon-user"></i>
+                            My account
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="ink-grid container">
+            <nav class="ink-navigation">
+                <ul class="menu horizontal shadowed white">
+                    <li class="active">
+                        <a href="#">
+                            General
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="pointsContainer">
+                <div class="column-group">
+                    <article class="large-33 medium-50 small-100 pointContainer">
+                        <div class="sectionContent shadow">
+                            <div class="titleContainer">General</div>
+                            <div class="column-group">
+                                <div class="large-33 medium-33 small-33 pointContainer">
+                                    <img src="js/holder.js/100x100/auto/industrial">
+                                </div>
+                                <div class="large-66 medium-66 small-66 pointContainer">
+                                    <div>Illutio</div>
+                                    <div>Guadalajara, México</div>
+                                    <div>App ID: illutio</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="large-33 medium-50 small-100 pointContainer">
+                        <div class="sectionContent shadow">
+                            Account - Tipo, puntos disponibles, espacio multimedia disponible, etc.
+                        </div>
+                    </article>
+                    <article class="large-33 medium-50 small-100 pointContainer">
+                        <div class="sectionContent shadow">
+                            Multimedia overview
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="ink-grid">
+                <nav class="ink-navigation push-left small-100 small-push-left">
+                    <ul class="menu horizontal">
+                        <li><a href="http://illut.io">illut.io</a></li>
+                        <li><a href="#" id="bugModal">Report a problem</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
+                <p class="push-right">copyright © illut.io</p>
+            </div>
+        </footer>
+        <div class="ink-shade fade">
+            <div id="reportBug" class="ink-modal" data-trigger="#bugModal" data-width="600px" data-height="500px" data-close-on-click="true">
+                <div class="modal-header">
+                    <button class="modal-close ink-dismiss"></button>
+                    <h5>Report a bug... :(</h5>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <form action="#" class="ink-form" id="report">
+                        <fieldset class="column-group">
+                            <div class="control-group required validation">
+                                <label for="text-input">Problem</label> 
+                                <div class="control">
+                                    <input type="text"  required autofocus>
+                                </div>
+                            </div>
+                            <div class="control-group required validation">
+                                <label for="text-input">Description</label> 
+                                <div class="control">
+                                    <textarea rows="3" placeholder="Details..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="control-group validation">
+                                <label for="text-input">Steps (Optional)</label> 
+                                <div class="control">
+                                    <textarea rows="3" placeholder="Steps to reproduce the problem..."></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="push-right">
+                        <button class="ink-button ink-dismiss">Cancel</button>
+                        <button class="ink-button blue" form="report">Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            Ink.requireModules( ['Ink.UI.Modal_1'], function(Modal){
+                new Modal('#reportBug');
+            });
+        </script>
+    </body>
+</html>
