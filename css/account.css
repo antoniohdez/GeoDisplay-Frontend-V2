@@ -22,3 +22,11 @@
 	background: #2b85de;
 	color: #FFF;
 }
+
+.dataContainer{
+	padding: .1em .1em .1em 0;
+}
+
+.top{
+	margin-top: 1em;
+}

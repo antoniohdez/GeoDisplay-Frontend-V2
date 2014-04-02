@@ -91,7 +91,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="ink-grid container" id="activePoints">
+        <div class="ink-grid container">
             <nav class="ink-navigation">
                 <ul class="menu horizontal shadowed white">
                     <li class="active">
@@ -100,7 +100,7 @@
                             <span class="ink-badge blue">12</span>
                         </a>
                     </li>
-                    <li onclick="showInactive()">
+                    <li>
                         <a href="#">
                             Inactive
                             <span class="ink-badge blue">2</span>
@@ -242,97 +242,6 @@
                 </div>
             </section>
         </div>
-        <div class="ink-grid container" id="inactivePoints" style="display:none">
-            <nav class="ink-navigation">
-                <ul class="menu horizontal shadowed white">
-                    <li>
-                        <a href="#" onclick="showActive()">
-                            Active
-                            <span class="ink-badge blue">12</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            Inactive
-                            <span class="ink-badge blue">2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            All
-                            <span class="ink-badge blue">14 / 20</span>
-                        </a>
-                    </li>
-                    <li class="push-right">
-                        <a href="#" style="color:#4a9b17;"><i class="icon-plus-sign"></i> New point</a>
-                    </li> 
-                </ul>
-            </nav>
-            <section class="pointsContainer">
-                <div class="column-group">
-                    <article class="large-33 medium-50 small-100 pointContainer">
-                        <div class="pointContent">
-                            <div class="titleContainer">
-                                <strong>Title</strong>
-                                <span class="push-right">
-                                    <i class="icon-ok tooltip" data-tip-text="Enable" data-tip-where="up" data-tip-color="blue"></i>
-                                    <i class="icon-copy tooltip" data-tip-text="Clone" data-tip-where="up" data-tip-color="blue"></i>
-                                    <i class="icon-edit tooltip" data-tip-text="Edit" data-tip-where="up" data-tip-color="blue"></i>
-                                    <i class="icon-trash tooltip" data-tip-text="Delete" data-tip-where="up" data-tip-color="blue"></i>
-                                </span>
-                            </div>
-                            <div class="mapContainer">
-                                <img src="http://maps.googleapis.com/maps/api/staticmap?center=40.914728,-73.970072&zoom=14&size=320x150&maptype=roadmap&sensor=false" alt="title">
-                            </div>
-                            <div class="infoContainer">
-                                <div>
-                                    <i class="icon-globe"></i>
-                                    <a href="#">http://www.illut.io</a>
-                                </div>
-                                <div>
-                                    <i class="icon-facebook-sign facebook-logo"></i>
-                                    <a href="">http://www.facebook.com/illutio</a>
-                                </div>
-                                <div>
-                                    <i class="icon-twitter twitter-logo"></i>
-                                    <a href="">http://www.twitter.com/illutio</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="large-33 medium-50 small-100 pointContainer">
-                        <div class="pointContent">
-                            <div class="titleContainer">
-                                <strong>Title</strong>
-                                <span class="push-right">
-                                    <i class="icon-ok tooltip" data-tip-text="Enable" data-tip-where="up" data-tip-color="blue"></i>
-                                    <i class="icon-copy tooltip" data-tip-text="Clone" data-tip-where="up" data-tip-color="blue"></i>
-                                    <i class="icon-edit tooltip" data-tip-text="Edit" data-tip-where="up" data-tip-color="blue"></i>
-                                    <i class="icon-trash tooltip" data-tip-text="Delete" data-tip-where="up" data-tip-color="blue"></i>
-                                </span>
-                            </div>
-                            <div class="mapContainer">
-                                <img src="http://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.958072&zoom=14&size=320x150&maptype=roadmap&sensor=false" alt="title">
-                            </div>
-                            <div class="infoContainer">
-                                <div>
-                                    <i class="icon-globe"></i>
-                                    <a href="#">http://www.illut.io</a>
-                                </div>
-                                <div>
-                                    <i class="icon-facebook-sign facebook-logo"></i>
-                                    <a href="">http://www.facebook.com/illutio</a>
-                                </div>
-                                <div>
-                                    <i class="icon-twitter twitter-logo"></i>
-                                    <a href="">http://www.twitter.com/illutio</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </div>
         <footer>
             <div class="ink-grid">
                 <nav class="ink-navigation push-left small-100 small-push-left">
@@ -387,16 +296,6 @@
             Ink.requireModules( ['Ink.UI.Modal_1'], function(Modal){
                 new Modal('#reportBug');
             });
-
-            function showInactive(){
-                var element = document.getElementById("inactivePoints").removeAttribute("style");
-                var element = document.getElementById("activePoints").setAttribute("style", "display:none");
-            }
-
-            function showActive(){
-                var element = document.getElementById("activePoints").removeAttribute("style");
-                var element = document.getElementById("inactivePoints").setAttribute("style", "display:none");
-            }
         </script>
     </body>
 </html>
