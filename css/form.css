@@ -15,6 +15,16 @@
 	background-color:#4a9b17 !important;
 }
 
+.removeFile{
+	color:#F00;
+	cursor:pointer;
+}
+
+.fileName{
+	margin-top:.25em;
+	margin-bottom: 0em !important;
+}
+
 .formContent{
 	background: #fafdff;
 	padding: 0em;

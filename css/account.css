@@ -10,6 +10,10 @@
 	padding: .5em;
 }
 
+.formContainer{
+	padding: .5em 1em 0em 1em;
+}
+
 .sectionContent{
 	background: #fafdff;
 	padding: 0em;

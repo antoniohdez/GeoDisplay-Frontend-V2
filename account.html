@@ -110,7 +110,7 @@
                                             <div class="dataContainer">App ID: illutio</div>
                                             <div class="dataContainer">info@illut.io</div>
                                             <div class="dataContainer">
-                                                Basic
+                                                PBasic
                                                 <span class="ink-badge blue">
                                                     <a href="" style="color:#FFF">Upgrade</a>
                                                 </span>
@@ -155,7 +155,94 @@
                         <div class="column-group">
                             <div class="sectionContent shadow">
                                 <div class="titleContainer"><strong>Settings</strong></div>
-                                <div class="pointContainer">Contenido</div>
+                                <div class="formContainer">
+                                    <form class="ink-form">
+                                        <fieldset class="column-group gutters">
+                                            <div class="control-group large-50">
+                                                <label for="name">Name</label>
+                                                <div class="control">
+                                                    <input type="text" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-50">
+                                                <label for="email">Email</label>
+                                                <div class="control">
+                                                    <input type="text" id="email">
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-50">
+                                                <label for="country">Country</label>
+                                                <div class="control">
+                                                    <input type="text" name="country">
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-50">
+                                                <label for="city">City</label>
+                                                <div class="control">
+                                                    <input type="text" name="city">
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-50 push-right">
+                                                <button class="ink-button green push-right">Save</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="sectionContent shadow">
+                                <div class="titleContainer"><strong>Language</strong></div>
+                                <div class="formContainer">
+                                    <form class="ink-form">
+                                        <fieldset class="column-group gutters">
+                                            <div class="control-group large-50">
+                                                <label for="currentPassword">Select lenguage</label>
+                                                <div class="control">
+                                                    <select>
+                                                        <option>English</option>
+                                                        <option>Spanish</option>
+                                                        <option>German</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-50 push-right">
+                                                <label>&nbsp;</label>
+                                                <div class="control">
+                                                    <button class="ink-button green">Save</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="sectionContent shadow">
+                                <div class="titleContainer"><strong>Password</strong></div>
+                                <div class="formContainer">
+                                    <form class="ink-form">
+                                        <fieldset class="column-group gutters">
+                                            <div class="control-group large-33">
+                                                <label for="currentPassword">Current password</label>
+                                                <div class="control">
+                                                    <input type="password" name="currentPassword" pattern=".{6,}" title="Password must have at least 6 characters." required>
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-33">
+                                                <label for="country">New password</label>
+                                                <div class="control">
+                                                    <input type="password" name="newPassword">
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-33">
+                                                <label for="city">Confirm new password</label>
+                                                <div class="control">
+                                                    <input type="password" name="confirmedPassword">
+                                                </div>
+                                            </div>
+                                            <div class="control-group large-50 push-right">
+                                                <button class="ink-button green push-right">Save</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
