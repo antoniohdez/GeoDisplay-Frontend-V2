@@ -20,6 +20,10 @@
 	cursor:pointer;
 }
 
+tbody tr{
+	cursor: pointer;
+}
+
 .fileName{
 	margin-top:.25em;
 	margin-bottom: 0em !important;
