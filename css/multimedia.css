@@ -1,17 +1,19 @@
 @charset "UTF-8";
 
-.mainContainer{
-	margin-top: 1em;
-	/*border-radius: 5px;
-	padding: 0em;*/
-}
-
 .menuContainer{
 	padding: .5em;
 }
 
-.formContainer{
-	padding: .5em 1em 0em 1em;
+#addButton{
+	background:#6abb37;
+	color:#FFF !important;
+}
+#addButton:hover{
+	background-color:#4a9b17 !important;
+}
+
+.filesContainer{
+	padding: .5em 1em 1em 1em;
 }
 
 .sectionContent{
