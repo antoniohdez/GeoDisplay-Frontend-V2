@@ -161,8 +161,12 @@
                                 </div>
                             </div>
                             <div class="sectionContent shadow">
-                                <div class="titleContainer"><strong>Language</strong></div>
-                                <div class="formContainer">
+                                <div class="titleContainer">
+                                    <strong>Language</strong>
+                                    <i id="language-hide" onclick="hideLang()" class="icon-minus-sign icon-large push-right" style="display:none"></i>
+                                    <i id="language-show" onclick="showLang()" class="icon-plus-sign icon-large push-right"></i>
+                                </div>
+                                <div id="languageContainer" class="formContainer" style="display:none">
                                     <form class="ink-form">
                                         <fieldset class="column-group gutters">
                                             <div class="control-group large-50">
@@ -186,8 +190,12 @@
                                 </div>
                             </div>
                             <div class="sectionContent shadow">
-                                <div class="titleContainer"><strong>Password</strong></div>
-                                <div class="formContainer">
+                                <div class="titleContainer">
+                                    <strong>Password</strong>
+                                    <i id="password-hide" onclick="hidePass()" class="icon-minus-sign icon-large push-right" style="display:none"></i>
+                                    <i id="password-show" onclick="showPass()" class="icon-plus-sign icon-large push-right"></i>
+                                </div>
+                                <div id="passwordContainer" class="formContainer" style="display:none">
                                     <form class="ink-form">
                                         <fieldset class="column-group gutters">
                                             <div class="control-group large-33">
@@ -274,6 +282,28 @@
             Ink.requireModules( ['Ink.UI.Modal_1'], function(Modal){
                 new Modal('#reportBug');
             });
+        </script>
+        <script>
+            function hideLang(){
+                document.getElementById("language-show").style.display = 'block';
+                document.getElementById("language-hide").style.display = 'none';
+                document.getElementById("languageContainer").style.display = 'none';
+            }
+            function showLang(){
+                document.getElementById("language-show").style.display = 'none';
+                document.getElementById("language-hide").style.display = 'block';
+                document.getElementById("languageContainer").style.display = 'block';   
+            }
+            function hidePass(){
+                document.getElementById("password-show").style.display = 'block';
+                document.getElementById("password-hide").style.display = 'none';
+                document.getElementById("passwordContainer").style.display = 'none';
+            }
+            function showPass(){
+                document.getElementById("password-show").style.display = 'none';
+                document.getElementById("password-hide").style.display = 'block';
+                document.getElementById("passwordContainer").style.display = 'block';   
+            }
         </script>
     </body>
 </html>
