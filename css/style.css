@@ -13,6 +13,16 @@ body{
 	margin-top: 1em;
 }
 
+.titleContainer{
+	padding: .5em .5em .5em 1em;
+	border-bottom: 1px #CCC solid;
+	background: white;
+	background: -webkit-linear-gradient(white, #f2f2f2); /* Safari/Chrome */
+	background: o-linear-gradient(white, #f2f2f2); /* For Opera */
+	background: -moz-linear-gradient(white, #f2f2f2); /* For Firefox */
+	background: linear-gradient(white, #f2f2f2); /* Standard syntax */
+}
+
 footer{
 	background: #EEE;
 	border-top: 0;
