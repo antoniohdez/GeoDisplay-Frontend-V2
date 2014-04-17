@@ -163,8 +163,8 @@
                             <div class="sectionContent shadow">
                                 <div class="titleContainer">
                                     <strong>Language</strong>
-                                    <i id="language-hide" onclick="hideLang()" class="icon-minus-sign icon-large push-right" style="display:none"></i>
-                                    <i id="language-show" onclick="showLang()" class="icon-plus-sign icon-large push-right"></i>
+                                    <i id="language-hide" onclick="hideContent('language')" class="icon-minus-sign icon-large push-right" style="display:none"></i>
+                                    <i id="language-show" onclick="showContent('language')" class="icon-plus-sign icon-large push-right"></i>
                                 </div>
                                 <div id="languageContainer" class="formContainer" style="display:none">
                                     <form class="ink-form">
@@ -192,8 +192,8 @@
                             <div class="sectionContent shadow">
                                 <div class="titleContainer">
                                     <strong>Password</strong>
-                                    <i id="password-hide" onclick="hidePass()" class="icon-minus-sign icon-large push-right" style="display:none"></i>
-                                    <i id="password-show" onclick="showPass()" class="icon-plus-sign icon-large push-right"></i>
+                                    <i id="password-hide" onclick="hideContent('password')" class="icon-minus-sign icon-large push-right" style="display:none"></i>
+                                    <i id="password-show" onclick="showContent('password')" class="icon-plus-sign icon-large push-right"></i>
                                 </div>
                                 <div id="passwordContainer" class="formContainer" style="display:none">
                                     <form class="ink-form">
@@ -284,25 +284,15 @@
             });
         </script>
         <script>
-            function hideLang(){
-                document.getElementById("language-show").style.display = 'block';
-                document.getElementById("language-hide").style.display = 'none';
-                document.getElementById("languageContainer").style.display = 'none';
+            function hideContent(element){
+                document.getElementById(element + "-show").style.display = 'block';
+                document.getElementById(element + "-hide").style.display = 'none';
+                document.getElementById(element + "Container").style.display = 'none';
             }
-            function showLang(){
-                document.getElementById("language-show").style.display = 'none';
-                document.getElementById("language-hide").style.display = 'block';
-                document.getElementById("languageContainer").style.display = 'block';   
-            }
-            function hidePass(){
-                document.getElementById("password-show").style.display = 'block';
-                document.getElementById("password-hide").style.display = 'none';
-                document.getElementById("passwordContainer").style.display = 'none';
-            }
-            function showPass(){
-                document.getElementById("password-show").style.display = 'none';
-                document.getElementById("password-hide").style.display = 'block';
-                document.getElementById("passwordContainer").style.display = 'block';   
+            function showContent(element){
+                document.getElementById(element + "-show").style.display = 'none';
+                document.getElementById(element + "-hide").style.display = 'block';
+                document.getElementById(element + "Container").style.display = 'block';   
             }
         </script>
     </body>
