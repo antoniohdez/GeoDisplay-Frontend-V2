@@ -7,6 +7,13 @@ html, body{
 	overflow: auto;
 }
 
+.notification-login{
+	color: #FFF;
+	overflow: hidden;
+	padding: .5em;
+	z-index: 100;
+}
+
 .backgroundImage{
 	background: #DFDFDF;
 	position: fixed;
