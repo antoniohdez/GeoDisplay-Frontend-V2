@@ -25,11 +25,13 @@
 }
 
 #addButton{
-	background:#6abb37;
-	color:#FFF !important;
-}
-#addButton:hover{
-	background-color:#4a9b17 !important;
+	background: #4c9220;
+	background: -moz-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: -webkit-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: -o-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: -ms-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: linear-gradient(to bottom, #4c9220 0, #366817 150%);
+	color:#FFF;
 }
 
 .pointContent .mapContainer{
