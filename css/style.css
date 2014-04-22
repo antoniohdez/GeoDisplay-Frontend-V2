@@ -9,6 +9,10 @@ body{
 		-ms-user-select: none; /* IE10+ */
 }
 
+.image{
+	margin: 1em;
+}
+
 .container{
 	margin-top: 1em;
 	margin-bottom: 1em;
@@ -116,4 +120,17 @@ footer p{
 
 select{
 	height:2em;
+}
+
+.greenButton{
+	background: #4c9220;
+	background: -moz-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: -webkit-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: -o-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: -ms-linear-gradient(top, #4c9220 0, #366817 150%);
+	background: linear-gradient(to bottom, #4c9220 0, #366817 150%);
+	border: 0;
+	color:#FFF;
+	margin: .25em;
+	padding: .5em 1em;
 }
