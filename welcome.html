@@ -74,30 +74,104 @@
             <nav class="ink-navigation">
                 <ul class="breadcrumbs white shadowed">
                     <li><a href="#">Welcome <i class="icon-ok" style="color:#0A0"></i></a></li>
-                    <li><a href="#">Confirm</a></li>
-                    <li><a href="#">Change Password</a></li>
+                    <li><a href="#">Confirm <i class="icon-ok" style="color:#0A0"></i></a></li>
                     <li><a href="#">Profile</a></li>
+                    <li><a href="#">Change Password</a></li>
                     <li class="active"><a href="#">Current item</a></li>
                 </ul>
             </nav>
             <div class="container">
                 <div class="column-group">
-                    <div class="large-50 medium-75 small-100 sectionContent shadow push-center content-center">
+                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center content-center">
                         <h2>Welcome to your GeoDisplay's account</h2>
                         <div>
                             <img src="img/geoDisplayLogo-124x124.png" alt="GeoDisplay Logo" class="image">
                         </div>
                         <button class="greenButton">Continue</button>
                     </div>
-                    <div class="large-50 medium-75 small-100 sectionContent shadow push-center ">
-                        <p>To start using it you must give some information to set up your account, but first, confirm the following information:</p>
-                        <blockquote>
+                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center">
+                        <h2 class="content-center">Confirm your information</h2>
+                        <p>Please, confirm that the following information is correct:</p>
+                        <div class="details">
                             <div>App ID: illutio</div>
                             <div>email: info@illut.io</div>
                             <div>Plan: Basic</div>
-                            <div>Due date: 18/Sep/2014</div>
-                        </blockquote>
-                        <p>If the information above is incorrect, please log out and report this to {email del creador de la cuenta}</p>
+                        </div>
+                        <div class="content-center">
+                            <button class="greenButton">Confirm</button>
+                        </div>
+                        <p class="note">If the information above is incorrect, please report this to: {email del creador de la cuenta}</p>
+                    </div>
+                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center">
+                        <h2 class="content-center">Complete your profile</h2>
+                        <p>To start using your account you have to give some information.</p>
+                        <form class="ink-form">
+                            <fieldset class="column-group gutters">
+                                <div class="control-group required large-50 medium-50 small-100">
+                                    <label for="name">Name:</label> 
+                                    <div class="control">
+                                        <input id="name" type="text">
+                                    </div>
+                                </div>
+                                <div class="control-group large-50 medium-50 small-100">
+                                    <label for="logo">Logo:</label> 
+                                    <div class="control">
+                                        <div class="input-file"><input type="file"></div>
+                                    </div>
+                                </div>
+                                <div class="control-group required large-50 medium-50 small-100">
+                                    <label for="country">Country:</label> 
+                                    <div class="control">
+                                        <select name="country" style="height:2.5em;">
+                                            <option value="-">-</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="United States">United States</option>
+                                            <option value="Germany">Germany</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="control-group large-50 medium-50 small-100">
+                                    <label for="city">City:</label> 
+                                    <div class="control">
+                                        <input id="city" type="text">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="content-center">
+                            <button class="greenButton">Save</button>
+                        </div>
+                        <p>If the information above is incorrect, please report this to {email del creador de la cuenta}</p>
+                    </div>
+                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center">
+                        <h2 class="content-center">Change your password</h2>
+                        <p>We recommend to change your password to increase the security of your account.</p>
+                        <form class="ink-form">
+                            <fieldset class="column-group gutters">
+                                <div class="control-group required large-33 medium-50 small-100">
+                                    <label for="name">Actual:</label> 
+                                    <div class="control">
+                                        <input id="name" type="text">
+                                    </div>
+                                </div>
+                                <div class="control-group required large-33 medium-50 small-100">
+                                    <label for="name">New password:</label> 
+                                    <div class="control">
+                                        <input id="name" type="text">
+                                    </div>
+                                </div>
+                                <div class="control-group required large-33 medium-50 small-100">
+                                    <label for="name">Confirm:</label> 
+                                    <div class="control">
+                                        <input id="name" type="text">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="content-center">
+                            <a href="index.html" style="color:#555;">Change later</a>
+                            <button class="greenButton">Save</button>
+                        </div>
                     </div>
                 </div>
             </div>
