@@ -64,14 +64,14 @@
             </nav>
             <div class="container">
                 <div class="column-group">
-                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center content-center">
+                    <div id="welcome" class="large-55 medium-75 small-100 sectionContent shadow push-center content-center">
                         <h2>Welcome to your GeoDisplay's account</h2>
                         <div>
                             <img src="img/geoDisplayLogo-124x124.png" alt="GeoDisplay Logo" class="image">
                         </div>
-                        <button class="greenButton">Continue</button>
+                        <button class="greenButton" onclick="next('welcome', 'confirm')">Continue</button>
                     </div>
-                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center">
+                    <div id="confirm" class="large-55 medium-75 small-100 sectionContent shadow push-center welcomeContent">
                         <h2 class="content-center">Confirm your information</h2>
                         <p>Please, confirm that the following information is correct:</p>
                         <div class="details">
@@ -80,11 +80,11 @@
                             <div>Plan: Basic</div>
                         </div>
                         <div class="content-center">
-                            <button class="greenButton">Confirm</button>
+                            <button class="greenButton" onclick="next('confirm', 'profile')">Confirm</button>
                         </div>
                         <p class="note">If the information above is incorrect, please report this to: {email del creador de la cuenta}</p>
                     </div>
-                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center">
+                    <div id="profile" class="large-55 medium-75 small-100 sectionContent shadow push-center welcomeContent">
                         <h2 class="content-center">Complete your profile</h2>
                         <p>To start using your account you have to give some information.</p>
                         <form class="ink-form">
@@ -121,11 +121,11 @@
                             </fieldset>
                         </form>
                         <div class="content-center">
-                            <button class="greenButton">Save</button>
+                            <button class="greenButton" onclick="next('profile', 'password')">Save</button>
                         </div>
                         <p>If the information above is incorrect, please report this to {email del creador de la cuenta}</p>
                     </div>
-                    <div class="large-55 medium-75 small-100 sectionContent shadow push-center">
+                    <div id="password" class="large-55 medium-75 small-100 sectionContent shadow push-center welcomeContent">
                         <h2 class="content-center">Change your password</h2>
                         <p>We recommend to change your password to increase the security of your account.</p>
                         <form class="ink-form">
@@ -152,7 +152,15 @@
                         </form>
                         <div class="content-center">
                             <a href="index.html" style="color:#555;">Change later</a>
-                            <button class="greenButton">Save</button>
+                            <button class="greenButton" onclick="next('password', 'complete')">Change password</button>
+                        </div>
+                    </div>
+                    <div id="complete" class="large-55 medium-75 small-100 sectionContent shadow push-center welcomeContent">
+                        <h2 class="content-center">Completed</h2>
+                        <p>Thank you for using GeoDisplay!</p>
+                        <p>Now you can start using your account.</p>
+                        <div class="content-center">
+                            <button class="greenButton" onclick="location.href = 'index.html';">Start</button>
                         </div>
                     </div>
                 </div>
@@ -212,6 +220,14 @@
             Ink.requireModules( ['Ink.UI.Modal_1'], function(Modal){
                 new Modal('#reportBug');
             });
+        </script>
+        <script>
+            function next(element, next){
+                var node = document.getElementById(element);
+                node.className = node.className + " welcomeContent";
+                node = document.getElementById(next)
+                node.className = node.className.replace(/\bwelcomeContent\b/,'');
+            }
         </script>
     </body>
 </html>

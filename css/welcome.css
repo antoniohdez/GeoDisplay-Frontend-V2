@@ -14,3 +14,7 @@
 .note{
 	font-size: .75em;
 }
+
+.welcomeContent{
+	display: none;
+}
