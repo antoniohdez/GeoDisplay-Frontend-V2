@@ -14,8 +14,36 @@
 	color: white;
 }
 
-.filesContainer{
-	padding: .5em 1em 1em 1em;
+.file-container{
+	margin: .5em;
+	text-align: center;
+}
+
+.file-container > .file-preview{
+	height: 5em;
+}
+
+.file-container > .file-name{
+	padding: 5px;
+}
+
+.store-item{
+	background-color: #EEE;
+	border: 1px solid #AAA;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.store-item > .store-preview{
+
+}
+
+.store-item > .store-name{
+
+}
+
+.store-item > .store-button{
+
 }
 
 .sectionContent{
